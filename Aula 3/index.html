@@ -1,24 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
-<form action="https://www.w3schools.com/action_page.php">
-    <fieldset>
-        <legend>Login:</legend>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="Felipe"><br>
-        <label for="password">password:</label><br>
-        <input type="password" id="password" name="password"><br><br>
-        <input type="submit" value="Submit">
-     </fieldset>
 
-</form>
+<body>
+
+    <h4>Data: </h4>
+    <form action=https://www.w3schools.com/action_page.php>
+        <input type="date">
+
+        <fieldset>
+            <br>
+            <legend>Login:</legend>
+
+            <label for="fname">Username:</label><br>
+            <input type="text" id="name" name="fname"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="name"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="name">Nome:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="address">Endereço:</label><br>
+            <input type="text" id="name"><br>
+            <label for="numero">Número:</label><br>
+            <input type="number" id="name"><br>
+            <label for="Complemento">Complemento:</label><br>
+            <input type="text" id="name"><br>
+
+            <label for="Cidade">Cidade:</label><br>
+            <input list="browsers" name="browser"><br>
+            <datalist id="browsers">
+                <option value="Sorocaba"></option>
+                <option value="Campinas"></option>
+                <option value="Rio de Janeiro"></option>
+                <option value="São Paulo"></option>
+            </datalist>
+
+            <label for="Estado">Estado:</label><br>
+            <input list="estado" name="estado">
+
+            <datalist id="estado">
+                <option value="SP">
+                <option value="RJ">
+                <option value="MS">
+                <option value="RS">
+                <option value="DF">
+            </datalist>
+            <br>
+
+            <label for="zipcode">ZIP Code:</label><br>
+            <input type="number" id="name"><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Gênero:</legend>
+            <input type="radio" id="name" name="genero" value="Masculino">
+            <label for="Masculino">Masculino</label><br>
+            <input type="radio" id="name" name="genero" value="Feminino">
+            <label for="Feminino">Feminino</label><br>
+            <input type="radio" id="name" name="genero" value="Prefiro não informar">
+            <label for="Prefiro não informar">Prefiro não informar</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Curso:</legend>
+            <input type="checkbox" id="name" name="curso1" value="Arquitetura">
+            <label for="curso1"> Arquitetura</label><br>
+            <input type="checkbox" id="name" name="curso2" value="Saúde">
+            <label for="curso2"> Saúde </label><br>
+            <input type="checkbox" id="name" name="curso3" value="Tecnologias">
+            <label for="curso3"> Tecnologias</label><br>
+            <input type="checkbox" id="name" name="curso4" value="Enhenharias">
+            <label for="curso4"> Enhenharias</label><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Modelo:</legend>
+            <input type="radio" id="name" name="mod" value="Presencial">
+            <label for="Presencial">Presencial</label><br>
+            <input type="radio" id="name" name="mod" value="EAD">
+            <label for="EAD">EAD</label><br>
+            <input type="radio" id="name" name="mod" value="Semi Presencial">
+            <label for="Semi Presencial">Semi Presencial</label>
+
+        </fieldset>
+
+        <input type="submit" name="submit" value="Submit">
+
+
+
+    </form>
 
 
 </body>
+
 </html>
