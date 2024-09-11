@@ -1,0 +1,22 @@
+/* Seletor por tag */
+        p
+        {
+            color: red
+            
+        }
+
+/* Seletor por classe */
+.blue {
+    color: blue;
+    background-color: gray;
+}
+
+.fontImpact {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Seletor por id */
+#meuId {
+    color: green;
+    text-decoration: none;
+}
