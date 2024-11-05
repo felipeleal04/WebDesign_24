@@ -1,6 +1,6 @@
 let display = document.getElementById("display");
-let currentOperation = null;
-let firstOperand = null;
+let Operacaoatual = null;
+let primeirovalor = null;
 
 function appendNumber(number) {
     if (display.innerText === "0") {
@@ -10,38 +10,38 @@ function appendNumber(number) {
     }
 }
 
-function setOperation(operation) {
-    firstOperand = parseFloat(display.innerText);
-    currentOperation = operation;
+function setOperation(operacao) {
+    primeirovalor = parseFloat(display.innerText);
+    Operacaoatual = operacao;
     display.innerText = "0";
 }
 
 function calculate() {
-    if (currentOperation && firstOperand !== null) {
-        const secondOperand = parseFloat(display.innerText);
-        let result;
-        switch (currentOperation) {
+    if (Operacaoatual && primeirovalor !== null) {
+        const segundovalor = parseFloat(display.innerText);
+        let resultado;
+        switch (Operacaoatual) {
             case '+':
-                result = firstOperand + secondOperand;
+                resultado = primeirovalor + segundovalor;
                 break;
             case '-':
-                result = firstOperand - secondOperand;
+                resultado = primeirovalor - segundovalor;
                 break;
             case '*':
-                result = firstOperand * secondOperand;
+                resultado = primeirovalor * segundovalor;
                 break;
             case '/':
-                result = firstOperand / secondOperand;
+                resultado = primeirovalor / segundovalor;
                 break;
         }
-        display.innerText = result;
-        currentOperation = null;
-        firstOperand = null;
+        display.innerText = resultado;
+        Operacaoatual = null;
+        primeirovalor = null;
     }
 }
 
 function clearDisplay() {
     display.innerText = "0";
-    firstOperand = null;
-    currentOperation = null;
+    primeirovalor = null;
+    Operacaoatual = null;
 }
